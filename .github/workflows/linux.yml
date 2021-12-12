@@ -23,7 +23,14 @@ jobs:
           path: opencv-${{ env.OPENCV_VERSION }}
           ref: ${{ env.OPENCV_VERSION }}
           submodules: recursive
-
+      
+      - name: checkout opencv_contrib
+        uses: actions/checkout@v2
+        with:
+          repository: opencv/opencv_contrib
+          path: opencv-${{ env.OPENCV_VERSION }}/opencv_contrib
+          ref: ${{ env.OPENCV_VERSION }}
+          submodules: recursive
       # 复制编译脚本
       - name: copy build script
         run: |
