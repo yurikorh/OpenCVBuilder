@@ -24,7 +24,7 @@ function cmakeParamsLinux() {
     ..
   cmake --build . --config $1 -j $NUM_THREADS
   cmake --build . --config $1 --target install
-  cat build-Release/CMakeFiles/CMakeOutput.log"
+  cat build-Release/CMakeFiles/CMakeOutput.log
   popd
 }
 
