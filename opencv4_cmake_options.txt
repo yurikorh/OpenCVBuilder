@@ -79,5 +79,6 @@
 -DBUILD_opencv_objdetect=OFF
 -DBUILD_opencv_stitching=OFF
 -DBUILD_opencv_ml=OFF
+-DBUILD_opencv_freetype=ON
 -DBUILD_WITH_STATIC_CRT=OFF
 -DWITH_ADE=OFF
