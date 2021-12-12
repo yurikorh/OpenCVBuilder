@@ -1,4 +1,4 @@
--DOPENCV_EXTRA_MODULES_PATH=opencv_contrib/modules 
+-DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules 
 -DBUILD_ZLIB=ON
 -DBUILD_TIFF=ON
 -DBUILD_OPENJPEG=ON
