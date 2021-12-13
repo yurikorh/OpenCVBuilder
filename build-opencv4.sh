@@ -15,6 +15,7 @@ function cmakeParamsMac() {
 }
 
 function cmakeParamsLinux() {
+  sudo apt-get install meson pkg-config ragel gtk-doc-tools gcc g++ libfreetype6-dev libglib2.0-dev libcairo2-dev
   mkdir -p "build-$1"
   pushd "build-$1"
   cmake -DCMAKE_BUILD_TYPE=$1 -DCMAKE_CONFIGURATION_TYPES=$1 \
